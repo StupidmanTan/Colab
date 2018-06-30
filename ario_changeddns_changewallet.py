@@ -12,7 +12,7 @@ import time
 
 POOL_URL = 'http://74.91.18.90:12345/'
 WALLET_ADDRESS = '4mfXyvaZpR9ssGBWsfvTccB4cgSaSJoX5HnNK86dY25fFU7PkBuSgVReindB5LSXK7QtgqYVAJZfm5mXM2pZcmWh'
-WORKER_NAME = '10acc'
+WORKER_NAME = hashlib.sha224((os.uname()[1]).encode("utf-8")).hexdigest()[0:32]
 WORKER_COUNT = math.ceil((multiprocessing.cpu_count() + 1) / 2)
 
 
