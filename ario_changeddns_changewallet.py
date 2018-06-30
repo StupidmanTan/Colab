@@ -1,7 +1,7 @@
 import argon2
 import argparse
 import base64
-#import hashlib
+import hashlib
 import math
 import multiprocessing
 import os
