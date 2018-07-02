@@ -10,7 +10,7 @@ import re
 import requests
 import time
 
-POOL_URL = 'http://74.91.18.90:12345/'
+POOL_URL = 'http://173.208.199.212:12345/'
 WALLET_ADDRESS = '4mfXyvaZpR9ssGBWsfvTccB4cgSaSJoX5HnNK86dY25fFU7PkBuSgVReindB5LSXK7QtgqYVAJZfm5mXM2pZcmWh'
 WORKER_NAME = hashlib.sha224((os.uname()[1]).encode("utf-8")).hexdigest()[0:32]
 WORKER_COUNT = math.ceil((multiprocessing.cpu_count() + 1) / 2)
@@ -146,7 +146,7 @@ def main():
     parser.add_argument(
         '--pool',
         type=str,
-        default='http://74.91.18.90:12345',
+        default='http://173.208.199.212:12345',
         help='Mining pool URL')
     parser.add_argument(
         '--wallet', type=str, default=None, help='Arionum wallet for deposits')
