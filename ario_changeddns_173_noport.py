@@ -53,7 +53,7 @@ def update_work(work_item, work_item_lock, hash_rates):
             if update_count % 10 == 0:
                 print("update_work:\n", r.json())
             update_count += 1
-            time.sleep(5)
+            time.sleep(15)
         except Exception as e:
             print("update_work failed, retry in 30s:\n", e)
             time.sleep(30)
@@ -82,7 +82,7 @@ def submit_share(nonce, argon, pool_address):
     except Exception as e:
         print("submit_share failed, retry in 5s:\n", e)
         retry_count += 1
-        time.sleep(5)
+        time.sleep(15)
     finally:
         if retry_count == 5:
             print("submit_share failed after 5 attempts\n")
@@ -180,7 +180,7 @@ def main():
         p.start()
 
         while work_item[0] is None:
-            time.sleep(1)
+            time.sleep(5)
 
         processes = []
         for i in range(WORKER_COUNT):
